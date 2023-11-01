@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+:root {
+  --violet: hsl(263, 55%, 52%);
+  --grayish-blue: hsl(217, 19%, 35%);
+  --blackish-blue: hsl(219, 29%, 14%);
+  --Light-gray: hsl(0, 0%, 73%);
+  --Light-grayish--blue: hsl(210, 46%, 95%);
+}
+
+body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 100vh;
+  background-color: var(--Light-grayish--blue);
+  padding-block-start: 10rem;
+  padding-block-end: 5rem;
+}
+a {
+  font-weight: bold;
+  color: var(--violet);
+  text-decoration: none;
+}
+.testimonials__container {
+  max-width: 1400px;
+  display: grid;
+  gap: 2rem;
+  margin-inline: 20px;
+}
+
+/* // general style */
+.testimonial__card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+  padding: 2rem;
+  border-radius: 15px;
+}
+.testimonial__person {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.testimonial__person img {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+.testimonial__name h4 {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.testimonial__name p {
+  font-size: 12px;
+}
+.grid-col-span {
+  grid-column: span 2;
+}
+.grid-row-span {
+  grid-column: span 2;
+}
+
+@media (min-width: 1109px) {
+  .testimonials__container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .grid-row-span {
+    grid-column: 4;
+    grid-row: 1 / span 2;
+  }
+  body {
+    padding: 0;
+  }
+  .grid-col-span {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 559px) {
+  .testimonials__container {
+    grid-template-columns: 1fr;
+  }
+  .grid-col-span {
+    grid-column: unset;
+  }
+  .grid-row-span {
+    grid-column: unset;
+    grid-row: unset;
+  }
+  body {
+    padding-block-start: 3rem;
+  }
+  .owner {
+    font-size: 11px !important;
+  }
+}
+
+/* // spesific detail style  */
+.card1 {
+  background-color: var(--violet);
+}
+.card1 .testimonial__person p {
+  color: var(--Light-gray);
+}
+.card1 .testimonial__person h4 {
+  color: white;
+}
+.card1 h2 {
+  font-size: 20px;
+  color: white;
+}
+.card1 p {
+  color: var(--Light-gray);
+}
+
+/* // card 2 */
+.card2 {
+  background-color: var(--grayish-blue);
+}
+.card2 .testimonial__person p {
+  color: var(--Light-gray);
+}
+.card2 .testimonial__person h4 {
+  color: white;
+}
+.card2 h2 {
+  font-size: 20px;
+  color: white;
+}
+.card2 p {
+  color: var(--Light-gray);
+}
+
+/* // card 3 */
+.card3 {
+  background-color: white;
+}
+.card3 .testimonial__person h4 {
+  color: var(--grayish-blue);
+}
+.card3 .testimonial__person p {
+  color: var(--Light-gray);
+}
+.card3 h2 {
+  font-size: 20px;
+  color: var(--grayish-blue);
+}
+.card3 p {
+  color: var(--Light-gray);
+}
+
+/* // card 4 */
+.card4 {
+  background-color: var(--blackish-blue);
+}
+.card4 .testimonial__person h4 {
+  color: white;
+}
+.card4 .testimonial__person p {
+  color: var(--Light-gray);
+}
+.card4 h2 {
+  font-size: 20px;
+  color: white;
+}
+.card4 p {
+  color: var(--Light-gray);
+}
+
+/* // card 5 */
+.card5 {
+  background-color: white;
+}
+.card5 .testimonial__person h4 {
+  color: var(--blackish-blue);
+}
+.card5 .testimonial__person p {
+  color: var(--Light-gray);
+}
+.card5 h2 {
+  font-size: 20px;
+  color: var(--blackish-blue);
+}
+.card5 p {
+  color: var(--Light-gray);
+}
+
+.owner {
+  font-size: 14px;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
