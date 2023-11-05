@@ -35,7 +35,15 @@ a {
   display: grid;
   gap: 2rem;
   margin-inline: 20px;
+  padding: 2rem;
 }
+
+@media (max-width: 524px){
+  .testimonials__container{
+    padding: 0;
+  }
+}
+
 
 /* // general style */
 .testimonial__card {
@@ -43,7 +51,7 @@ a {
   flex-direction: column;
   align-items: start;
   gap: 15px;
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 15px;
 }
 .testimonial__person {
@@ -56,7 +64,7 @@ a {
   width: 35px;
   height: 35px;
 }
-.testimonial__name h4 {
+.testimonial__name h1 {
   font-weight: 500;
   font-size: 15px;
 }
@@ -113,7 +121,7 @@ a {
 .card1 .testimonial__person p {
   color: var(--Light-gray);
 }
-.card1 .testimonial__person h4 {
+.card1 .testimonial__person h1 {
   color: white;
 }
 .card1 h2 {
@@ -131,7 +139,7 @@ a {
 .card2 .testimonial__person p {
   color: var(--Light-gray);
 }
-.card2 .testimonial__person h4 {
+.card2 .testimonial__person h1 {
   color: white;
 }
 .card2 h2 {
@@ -146,7 +154,7 @@ a {
 .card3 {
   background-color: white;
 }
-.card3 .testimonial__person h4 {
+.card3 .testimonial__person h1 {
   color: var(--grayish-blue);
 }
 .card3 .testimonial__person p {
@@ -164,7 +172,7 @@ a {
 .card4 {
   background-color: var(--blackish-blue);
 }
-.card4 .testimonial__person h4 {
+.card4 .testimonial__person h1 {
   color: white;
 }
 .card4 .testimonial__person p {
@@ -182,7 +190,7 @@ a {
 .card5 {
   background-color: white;
 }
-.card5 .testimonial__person h4 {
+.card5 .testimonial__person h1 {
   color: var(--blackish-blue);
 }
 .card5 .testimonial__person p {
